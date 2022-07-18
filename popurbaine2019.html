@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>pop_urbaine selon region</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="leaflet.css" />
+		<link rel="stylesheet" href="./main.css" />
+		<script src="region2015.geojson" type="text/javascript"></script>
+		
+	
+             
+		
+
+
+	<style>
+
+		#map {
+			width: 800px;
+			height: 600px;
+			margin: 20px auto;
+		}
+		
+	</style>
+
+
+
+
+	</head>
+	
+
+		
+					
+	
+				
+
+                            <section class="wrapper style1" style="background-color:"#c7e9c0;>
+
+				
+
+                              <h2 style="margin-left:1em;margin-top:-2em;" > <FONT size="5pt" ><i><U>
+                              Carte représentative de la population urbaine au Maroc par région pour l'année 2019</U></i>
+
+                              
+
+                    <div class="middle-column">
+                  <div id="map"></div>
+
+				<U> <i style="color:#02818a;padding-left: 5em;"; > </U>
+				<center> 
+					 Carte à symboles proportionnels pour l'année 2019.
+					
+				</i></center>
+
+
+			</div>
+		</div>
+	</section>
+
+	
+	
+<script data-require="jquery@*" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.js"></script>
+
+	<script type="text/javascript" src="./centroide_region.geojson" ></script>
+	<script>
+		// map options
+        
+
+
+		var options = {
+			center: [28.6,-4.3],          
+			zoom: 5
+		}
+
+		// create a Leaflet map in our division container with id of 'map'
+		var map = L.map('map', options);
+
+		// Leaflet providers base map URL
+		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+
+		L.geoJSON(region_2015, {
+
+	}).addTo(map);
+
+		pop_urbaine.features.sort(function (a, b) {
+			return b.properties.valeur - a.properties.valeur;
+		});
+
+
+
+		
+		L.geoJson(pop_urbaine, {
+			filter: function (feature) {
+				if (feature.properties.pop_u_2019) { // This test to see if the key exits
+					return feature;
+				}
+			},
+			pointToLayer: function (feature, latlng) {
+				return L.circleMarker(latlng, {
+					color: 'magenta',
+					weight: 1,
+					fillColor: 'yellow',
+					fillOpacity: 0.3,
+					radius: getRadius(feature.properties.pop_u_2019)
+				});
+			},
+			onEachFeature: function (feature, layer) {
+				var popup =
+					'<p><b>' + layer.feature.properties.Région + '</b></p>' +
+					'<p>nmb pop urbaine: ' + layer.feature.properties.pop_u_2019 + ' </p>'  
+					
+
+				layer.on('mouseover', function () {
+					layer.bindPopup(popup).openPopup();
+					layer.setStyle({
+						fillColor: 'yellow',
+						fillOpacity: 1
+					});
+				});
+
+				layer.on('mouseout', function () {
+					layer.setStyle({
+						fillColor: '#005824',
+						fillOpacity: 0.3
+					});
+					layer.bindPopup(popup).closePopup();
+				})
+
+			}
+		}).addTo(map);
+
+		L.geoJson(pop_urbaine, {
+			filter: function (feature) {
+				if (feature.properties.pop_u_2019) { 
+					return feature;
+				}
+			},
+			pointToLayer: function (feature, latlng) {
+				return L.circleMarker(latlng, {
+					color: '#005824',
+					weight: 1,
+					fillColor: '#005824',
+					fillOpacity: 0.3,
+					radius: getRadius(feature.properties.pop_u_2019)
+				});
+			},
+			onEachFeature: function (feature, layer) {
+				var popup =
+					'<p><b>' + layer.feature.properties.Région + '</b></p>' +
+					'<p>nbr pop urbaine: ' + layer.feature.properties.pop_u_2019 + ' </p>' 
+				layer.on('mouseover', function () {
+					layer.bindPopup(popup).openPopup();
+					layer.setStyle({
+						fillColor: 'yellow',
+						fillOpacity: 1
+					});
+				});
+
+				layer.on('mouseout', function () {
+					layer.setStyle({
+						fillColor: '#005824',
+						fillOpacity: 0.3
+					});
+					layer.bindPopup(popup).closePopup();
+				})
+
+			}
+		}).addTo(map);
+
+		function getRadius(area) {
+			var radius = Math.sqrt(area / Math.PI);
+			return radius * 0.015;
+		};
+                           
+                   
+             
+
+</script>
+<script src="./jquery.min.js"></script>
+			<script src="./jquery.dropotron.min.js"></script>
+			<script src="./browser.min.js"></script>
+			<script src="./breakpoints.min.js"></script>
+			<script src="./util.js"></script>
+			<script src="./main.js"></script>
+	
+</html>

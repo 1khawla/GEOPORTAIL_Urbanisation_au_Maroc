@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+	.Nom_Provin-border {
+		fill: none;
+		stroke: rgb(138, 40, 40);
+		stroke-opacity: 1;
+    	stroke-width: 1;
+    	stroke-linecap: round;
+    	stroke-linejoin: round;
+		pointer-events: none;
+	}
+	.axis text {
+		font: 10px sans-serif;
+	}
+
+	.axis line, .axis path {
+		fill: none;
+		stroke: #000;
+		shape-rendering: crispEdges;
+	}
+</style>
+<html>
+	<body>
+		<input id="slider" type="range" min="22" max="28" value="22" step="1" />
+
+		<span id="range">22</span>
+		<script src="https://d3js.org/d3.v3.min.js"></script>
+		<script src="https://d3js.org/topojson.v1.min.js"></script>
+		<script src="https://raw.github.com/fryn/html5slider/master/html5slider.js"></script>
+		<script type="text/javascript">
+
+//la fonction qui renvoie la valeur des cas contaminés d'un jour (range pr detereminer le jour et id pour determiner province)
+	
+onload = function() {
+  var $ = function(id) { return document.getElementById(id); };
+  $('slider').oninput = function() { $('range').innerHTML = this.value; };
+  $('slider').oninput();
+};
+
+	</script>
+		<script>
+			
+						
+			//choropleth
+			var width = 800, height = 400;
+
+			var value;
+			
+			// changer le type de scale (graduated colors)
+			var color = d3.scale.linear().domain([1, 5]).range(["#F7FBFF", "#08306B"]);
+
+			//Changer la projection
+			var projection = d3.geo.conicConformal().parallels([-90 + 00 / 60, 90 + 00 / 60]).rotate([-05 + 24 / 60, 0 + 0 / 60]).translate([width / 2, height / 2]);
+
+			var path = d3.geo.path().projection(projection);
+
+			var svg = d3.select("body").append("svg").attr("width", width).attr("height", height);
+			
+
+			d3.json("ok-test.json", function(error, ok) {
+				var provincesnew = topojson.feature(ok, ok.objects.provincesnew);
+
+				projection.scale(1).translate([0, 0]);
+
+				var b = path.bounds(provincesnew), s = .95 / Math.max((b[1][0] - b[0][0]) / width, (b[1][1] - b[0][1]) / height), t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2];
+
+				projection.scale(s).translate(t);
+
+				svg.selectAll("path").data(provincesnew.features.filter(function(d) {
+					return d.id;
+				})).enter().append("path").attr("class", "Nom_Provin").attr("d", path).style("fill", function(d) {
+					return color(d.properties.tt);
+				}).append("title").text(function(d) {
+					return " Province de " + d.properties.Nom_Provin ;
+				});
+
+				svg.append("path").datum(topojson.mesh(ok, ok.objects.provincesnew, function(a, b) {
+					return a !== b;
+				})).attr("class", "Nom_Provin-border").attr("d", path);
+
+				d3.selectAll("input").on("change", function change() {
+					var value = this.value;
+
+					d3.selectAll("path").style("fill", function(d) {
+						switch (value) {
+							case "22":
+							return color(d.properties.tt);
+								break;
+							case "23":
+								return color(d.properties.ttr);
+								break;
+							case "24":
+								return color(d.properties.tf);
+								break;
+							case "25":
+								return color(d.properties.tfv);
+								break;
+							case "26":
+								return color(d.properties.ts);
+								break;
+							case "27":
+								return color(d.properties.tsv);
+								break;
+							case "28":
+								return color(d.properties.te);
+								break;
+						}
+					});
+				});
+
+			});
+			//end choropleth
+
+			//key
+			var w = 140, h = 400;
+
+			var key = d3.select("body").append("svg").attr("id", "key").attr("width", w).attr("height", h);
+
+			var legend = key.append("defs").append("svg:linearGradient").attr("id", "gradient").attr("x1", "100%").attr("y1", "0%").attr("x2", "100%").attr("y2", "100%").attr("spreadMethod", "pad");
+
+			legend.append("stop").attr("offset", "0%").attr("stop-color", "#08306B").attr("stop-opacity", 1);
+
+			legend.append("stop").attr("offset", "100%").attr("stop-color", "#F7FBFF").attr("stop-opacity", 1);
+
+			key.append("rect").attr("width", w - 100).attr("height", h - 100).style("fill", "url(#gradient)").attr("transform", "translate(0,10)");
+
+			var y = d3.scale.linear().range([300, 0]).domain([1, 5]);
+
+			var yAxis = d3.svg.axis().scale(y).orient("right");
+
+			key.append("g").attr("class", "y axis").attr("transform", "translate(41,10)").call(yAxis).append("text").attr("transform", "rotate(-90)").attr("y", 30).attr("dy", ".71em").style("text-anchor", "end").text("Student teacher ratio");
+			//end key
+
+			d3.select(self.frameElement).style("height", height + "px");
+
+		</script>
+
+	</body>
+</html>

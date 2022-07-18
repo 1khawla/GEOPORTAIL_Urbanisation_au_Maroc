@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<!-- HEADER -->
+<head>
+
+<!-- META -->
+<meta charset="UTF-8">
+<meta http-equiv="content-language" content="fr"><!-- Langue -->
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- accents langue française -->
+<meta name="viewport" content="width=device-width, initial-scale=1"><!-- mobile -->
+
+<link rel="shortcut icon" href="../../../img/favicon.ico" type="image/x-icon" />
+<link href="../../../css/style.css" rel="stylesheet" type="text/css" media="all" /><!-- choix 1 -->
+<link rel="stylesheet" href="../../../css/print.css" type="text/css" media="print"/><!-- choix 2 -->
+
+<!-- Google Adsense -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6434437851824569",
+    enable_page_level_ads: true
+  });
+</script>
+<!-- Google Adsense -->
+
+<!-- Google Adsense AMP -->
+<script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
+<!-- /Google Adsense AMP -->
+
+<!-- Global site tag (gtag.js) - Google Analytics GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EE1N9H22HN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EE1N9H22HN');
+</script>
+<!-- /Global site tag (gtag.js) - Google Analytics GA4 -->
+
+<!-- Global site tag (gtag.js) - Google Analytics 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-65199653-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-65199653-1', { 'send_page_view': false });
+</script>
+/Global site tag (gtag.js) - Google Analytics -->
+
+<!-- Code Google - Universal Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65199653-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- /Code Google - Universal Analytics -->
+
+<!-- Partage SHARETHIS -->
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=598383b99bfbf80011bda322&product=inline-share-buttons' async='async'>
+		stLight.options({
+                éditeurGA:"UA-65199653-1"
+        });
+</script>
+<!-- /Partage SHARETHIS --><!-- /META -->
+
+<!-- TITRE DE LA PAGE -->
+<title>Carte du monde : taux d'urbanisation | Atlasocio.com</title>
+<link rel="canonical" href="https://atlasocio.com/cartes/recherche/selection/taux-urbanisation.php" />
+
+<meta name="keywords" content="carte monde, taux urbanisation, population urbaine par pays etats"/>
+<meta name="description" content="Cartes du monde relatives au taux d'urbanisation, soit le pourcentage de la population totale vivant dans un milieu défini comme urbain. Les définitions peuvent toutefois varier selon les pays." />
+
+<meta property="og:site_name" content="Atlasocio.com" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Carte du monde : taux d'urbanisation | Atlasocio.com" />
+<meta property="og:description" content="Cartes du monde relatives au taux d'urbanisation, soit le pourcentage de la population totale vivant dans un milieu défini comme urbain. Les définitions peuvent toutefois varier selon les pays." />
+<meta property="og:url" content="https://atlasocio.com/cartes/recherche/selection/taux-urbanisation.php" />
+<meta property="og:image" content="https://atlasocio.com/cartes/demographie/urbanisation/carte-monde-taux-urbanisation-par-etat-2018_atlasocio.png" />
+<!-- /TITRE DE LA PAGE -->
+
+</head>
+<!-- FIN HEADER -->
+
+<!-- BODY -->
+<body id="accueil" class="cartes">
+
+<!-- Analytics -->
+<!-- /Analytics -->
+
+<!-- MENU -->
+<!-- Google Adsense AMP diffusion -->
+<amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-6434437851824569">
+</amp-auto-ads>
+<!-- /Google Adsense AMP diffusion -->
+
+<!-- PUBLICITE -->
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"En poursuivant votre navigation sur ce site, vous acceptez l’utilisation de cookies afin d'analyser le trafic, de mesurer les performances des annonces, de vous proposer des contenus et services adaptés à vos centres d’intérêts.","dismiss":"J'accepte","learnMore":"En savoir plus et gérer ces paramètres","link":"https://atlasocio.com/politique-de-confidentialite.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin --><!-- /PUBLICITE -->
+
+<div id="page">
+<header>
+	<span class="slogan-atlasocio">
+	<a class="logo" href="https://atlasocio.com" title="Atlasocio.com" alt="Atlasocio.com">
+	<img src="../../../img/atlasocio-logo.png"/></a>
+	<span class="logo-devise">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L'ATLAS SOCIOLOGIQUE MONDIAL</span>
+	</span>
+        <nav class="menu-nav">
+          <ul>
+			<li id="nav-cartes">
+              <a href="../../../cartes/recherche/selection/cartes-et-planispheres.php" title="Cartes par thématique">Cartes</a>
+            </li>
+			<li id="nav-classements">
+              <a href="../../../classements/recherche/selection/classements-et-listes.php" title="Classements par thématique">Classements</a>
+            </li>
+			<li id="nav-etats">
+			  <a href="../../../etats/recherche/selection/etats-et-territoires.php" title="Fiches socio-statistiques par État et territoire">États</a>
+            </li>
+            <li id="nav-revue">
+              <a href="../../../revue/recherche/selection/revue-atlasocio.php" title="Revue Atlasocio">Revue</a>
+            </li>
+          </ul>
+        </nav>
+        <span id="nav-top-right" class="fond-div liens-top-right">
+		<span class="liens-top-right-span" title="Nous suivre sur Facebook" alt="Facebook">
+		<a href="https://www.facebook.com/atlasocio/" target="_blank"><img id="Light" src="../../../img/facebook.png"/></a></span>
+		<span class="liens-top-right-span" title="Nous suivre sur Twitter" alt="Twitter">
+		<a href="https://twitter.com/AtlasocioCom" target="_blank"><img id="Light" src="../../../img/twitter.png"/></a></span>
+        <span class="liens-top-right-span" title="S'abonner à nos publications" alt="Flux RSS">
+		<a href="../../../rss/atlasocio-rss.xml" target="_blank"><img id="Light" src="../../../img/rss.png"/></a></span>
+        </span>
+		
+</header>
+
+<!-- PUBLICITE -->
+<!-- Publicité "atlasocio-leaderboard" -->
+<div class="div-responsive responsive-table-all">
+<p class="pub-top" align="center">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- atlasocio-leaderboard -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6434437851824569"
+     data-ad-slot="1955004998"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</p><br />
+</div><!-- /PUBLICITE --><!-- /MENU -->
+	
+<div class="content colonne-principale">
+
+<p class="partie localisation">
+	<a href="https://atlasocio.com">Accueil</a>&nbsp;&raquo;&nbsp;
+	<a href="../../../cartes/recherche/selection/cartes-et-planispheres.php">Cartes et planisphères par thématique</a>&nbsp;&raquo;&nbsp;
+	<em>Carte du monde : taux d'urbanisation</em>
+</p><br />
+
+<section class="partie section-article" id="texte">
+
+<h1>Carte du monde : taux d'urbanisation</h1><br />
+<h3>© Atlasocio.com</h3>
+
+<!-- RESEAUX SOCIAUX TOP -->
+<section class="partie" id="reseaux-sociaux">
+<div class="reseaux-sociaux-left">
+<!-- ShareThis BEGIN -->
+<div class="sharethis-inline-share-buttons"></div>
+<!-- ShareThis END -->
+</div>
+	
+<!-- Reseaux-sociaux-right -->	
+<div class="reseaux-sociaux-right">&nbsp;</div>
+		
+</section>
+
+<div class="clearfix"></div>
+<!-- End reseaux-sociaux-right --><!-- RESEAUX SOCIAUX TOP -->
+
+<p class="accroche">Cartes du monde relatives au taux d'urbanisation, soit le pourcentage de la population totale vivant dans un milieu défini comme urbain. Les définitions peuvent toutefois varier selon les pays.</p>
+
+<ul class="lire-aussi">
+<li><span class="rouge">&#9654;&nbsp;</span>VOIR AUSSI&nbsp;:</li>
+<li>–&nbsp;<a href="../../../classements/demographie/urbanisation/classement-etats-par-taux-urbanisation-monde.php">
+Classement des États du monde par taux d'urbanisation</a></li>
+<li>–&nbsp;<a href="../../../cartes/recherche/selection/agglomerations-les-plus-peuplees.php">Cartes du monde relatives aux agglomérations les plus peuplées</a></li>
+<li>–&nbsp;<a href="../../../cartes/recherche/selection/agglomerations-les-plus-peuplees-croissance.php">Cartes du monde relatives à la croissance des agglomérations les plus peuplées</a></li>
+<li>–&nbsp;<a href="../../../cartes/recherche/selection/population-etats.php">Cartes du monde relatives à la population totale par État</a></li>
+</ul>
+	
+<!-- PUB RIGHT -->
+<p align="center"><span class="publicite">Publicité</span><br />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- atlasocio-300x250 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6434437851824569"
+     data-ad-slot="2544487348"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</p><!-- /PUB RIGHT -->
+
+<h2>Taux d'urbanisation par État et territoire<br /><span class="note">Source&nbsp;: World Urbanization Prospects, Population Division, Department of Economic and Social Affairs, United Nations.</span></h2>
+
+<div class="galerie-etat-top">
+  <a href="../../../cartes/demographie/urbanisation/carte-monde-taux-urbanisation-par-etat-2018_atlasocio.png" title="Cliquez pour agrandir">
+    <img id="Light" src="../../../cartes/demographie/urbanisation/carte-monde-taux-urbanisation-par-etat-2018_atlasocio.png" alt=""/>
+  </a>
+  <div class="desc">Taux d'urbanisation en 2018.</div>
+</div>
+
+<div class="galerie-etat-top">
+  <a href="../../../cartes/demographie/urbanisation/carte-monde-taux-urbanisation-par-etat-2010_atlasocio.png" title="Cliquez pour agrandir">
+    <img id="Light" src="../../../cartes/demographie/urbanisation/carte-monde-taux-urbanisation-par-etat-2010_atlasocio.png" alt=""/>
+  </a>
+  <div class="desc">Taux d'urbanisation en 2010.</div>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="galerie-etat">
+  <a href="../../../cartes/demographie/urbanisation/carte-monde-taux-urbanisation-par-etat-2000_atlasocio.png" title="Cliquez pour agrandir">
+    <img id="Light" src="../../../cartes/demographie/urbanisation/carte-monde-taux-urbanisation-par-etat-2000_atlasocio.png" alt=""/>
+  </a>
+  <div class="desc">Taux d'urbanisation en 2000.</div>
+</div>
+
+<div class="galerie-etat">
+  <a href="../../../cartes/demographie/urbanisation/carte-monde-taux-urbanisation-par-etat-1990_atlasocio.png" title="Cliquez pour agrandir">
+    <img id="Light" src="../../../cartes/demographie/urbanisation/carte-monde-taux-urbanisation-par-etat-1990_atlasocio.png" alt=""/>
+  </a>
+  <div class="desc">Taux d'urbanisation en 1990.</div>
+</div>
+
+<div class="galerie-etat">
+  <a href="../../../cartes/demographie/urbanisation/carte-monde-taux-urbanisation-par-etat-1980_atlasocio.png" title="Cliquez pour agrandir">
+    <img id="Light" src="../../../cartes/demographie/urbanisation/carte-monde-taux-urbanisation-par-etat-1980_atlasocio.png" alt=""/>
+  </a>
+  <div class="desc">Taux d'urbanisation en 1980.</div>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="galerie-etat">
+  <a href="../../../cartes/demographie/urbanisation/carte-monde-taux-urbanisation-par-etat-1970_atlasocio.png" title="Cliquez pour agrandir">
+    <img id="Light" src="../../../cartes/demographie/urbanisation/carte-monde-taux-urbanisation-par-etat-1970_atlasocio.png" alt=""/>
+  </a>
+  <div class="desc">Taux d'urbanisation en 1970.</div>
+</div>
+
+<div class="galerie-etat">
+  <a href="../../../cartes/demographie/urbanisation/carte-monde-taux-urbanisation-par-etat-1960_atlasocio.png" title="Cliquez pour agrandir">
+    <img id="Light" src="../../../cartes/demographie/urbanisation/carte-monde-taux-urbanisation-par-etat-1960_atlasocio.png" alt=""/>
+  </a>
+  <div class="desc">Taux d'urbanisation en 1960.</div>
+</div>
+
+<div class="clearfix parutions-separation"></div>
+
+<!-- RESEAUX SOCIAUX -->
+<section class="partie" id="reseaux-sociaux">
+<div class="reseaux-sociaux-left">
+<h3>&nbsp;</h3>
+<!-- ShareThis BEGIN -->
+<div class="sharethis-inline-share-buttons"></div>
+<!-- ShareThis END -->
+</div>
+		
+<div class="reseaux-sociaux-right">
+<button onclick="topFunction()" id="Topbutton">
+<img id="Light" src="../../../img/go-to-top.png" title="Haut de page" /></button>
+</div>
+		
+</section>
+<!-- End reseaux-sociaux-right --><!-- RESEAUX SOCIAUX -->
+
+<!-- Pub article footer -->
+<!-- Publicité "atlasocio-bloc-annonces" -->
+<p class="pub-article"><span class="publicite"></span><br />
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-6434437851824569"
+     data-ad-slot="6705016219"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p><!-- /Pub article footer -->
+
+</section>
+
+</div>
+
+<!-- ASIDE -->
+<aside>
+
+<section class="partie section-article">
+<!-- PUBLICITE -->
+<!-- Publicité "atlasocio-skyscraper" -->
+<p align="center"><span class="publicite">Publicité</span><br />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- atlasocio-skyscraper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6434437851824569"
+     data-ad-slot="9327310123"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</p><!-- /PUBLICITE -->
+</section>
+
+<section class="partie section-article">
+<h4>États les + consultés</h4>
+<h2 align="">
+01.&nbsp;<a href="../../../etats/fiches/c/congo-rdc.php"><img class="img" src="../../../etats/fiches/c/congo-rdc.png" width="20" height="13" alt=""/>&nbsp;Congo (RDC)</a><br />
+02.&nbsp;<a href="../../../etats/fiches/f/france.php"><img class="img" src="../../../etats/fiches/f/france.png" width="20" height="13" alt=""/>&nbsp;France</a><br />
+03.&nbsp;<a href="../../../etats/fiches/c/cote-d-ivoire.php"><img class="img" src="../../../etats/fiches/c/cote-d-ivoire.png" width="20" height="13" alt=""/>&nbsp;Côte d'Ivoire</a><br />
+04.&nbsp;<a href="../../../etats/fiches/a/algerie.php"><img class="img" src="../../../etats/fiches/a/algerie.png" width="20" height="13" alt=""/>&nbsp;Algérie</a><br />
+05.&nbsp;<a href="../../../etats/fiches/c/canada.php"><img class="img" src="../../../etats/fiches/c/canada.png" width="20" height="13" alt=""/>&nbsp;Canada</a><br />
+06.&nbsp;<a href="../../../etats/fiches/n/nigeria.php"><img class="img" src="../../../etats/fiches/n/nigeria.png" width="20" height="13" alt=""/>&nbsp;Nigeria</a><br />
+07.&nbsp;<a href="../../../etats/fiches/e/etats-unis.php"><img class="img" src="../../../etats/fiches/e/etats-unis.png" width="20" height="13" alt=""/>&nbsp;États-Unis</a><br />
+08.&nbsp;<a href="../../../etats/fiches/c/coree-du-sud.php"><img class="img" src="../../../etats/fiches/c/coree-du-sud.png" width="20" height="13" alt=""/>&nbsp;Corée du Sud</a><br />
+09.&nbsp;<a href="../../../etats/fiches/e/egypte.php"><img class="img" src="../../../etats/fiches/e/egypte.png" width="20" height="13" alt=""/>&nbsp;Égypte</a><br />
+10.&nbsp;<a href="../../../etats/fiches/b/bresil.php"><img class="img" src="../../../etats/fiches/b/bresil.png" width="20" height="13" alt=""/>&nbsp;Brésil</a><br />
+11.&nbsp;<a href="../../../etats/fiches/i/inde.php"><img class="img" src="../../../etats/fiches/i/inde.png" width="20" height="13" alt=""/>&nbsp;Inde</a><br />
+12.&nbsp;<a href="../../../etats/fiches/m/maroc.php"><img class="img" src="../../../etats/fiches/m/maroc.png" width="20" height="13" alt=""/>&nbsp;Maroc</a><br />
+13.&nbsp;<a href="../../../etats/fiches/a/argentine.php"><img class="img" src="../../../etats/fiches/a/argentine.png" width="20" height="13" alt=""/>&nbsp;Argentine</a><br />
+14.&nbsp;<a href="../../../etats/fiches/a/arabie-saoudite.php"><img class="img" src="../../../etats/fiches/a/arabie-saoudite.png" width="20" height="13" alt=""/>&nbsp;Arabie saoudite</a><br />
+15.&nbsp;<a href="../../../etats/fiches/i/indonesie.php"><img class="img" src="../../../etats/fiches/i/indonesie.png" width="20" height="13" alt=""/>&nbsp;Indonésie</a><br />
+16.&nbsp;<a href="../../../etats/fiches/b/belgique.php"><img class="img" src="../../../etats/fiches/b/belgique.png" width="20" height="13" alt=""/>&nbsp;Belgique</a><br />
+17.&nbsp;<a href="../../../etats/fiches/c/cambodge.php"><img class="img" src="../../../etats/fiches/c/cambodge.png" width="20" height="13" alt=""/>&nbsp;Cambodge</a><br />
+18.&nbsp;<a href="../../../etats/fiches/r/russie.php"><img class="img" src="../../../etats/fiches/r/russie.png" width="20" height="13" alt=""/>&nbsp;Russie</a><br />
+19.&nbsp;<a href="../../../etats/fiches/i/italie.php"><img class="img" src="../../../etats/fiches/i/italie.png" width="20" height="13" alt=""/>&nbsp;Italie</a><br />
+20.&nbsp;<a href="../../../etats/fiches/j/japon.php"><img class="img" src="../../../etats/fiches/j/japon.png" width="20" height="13" alt=""/>&nbsp;Japon</a><br />
+</h2>
+</section>
+
+<section class="partie section-article">
+<!-- PUBLICITE -->
+<!-- Publicité "atlasocio-skyscraper" -->
+<p align="center"><span class="publicite">Publicité</span><br />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- atlasocio-skyscraper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6434437851824569"
+     data-ad-slot="9327310123"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</p><!-- /PUBLICITE -->
+</section>
+
+<section class="partie section-article">
+<h4>Articles les + consultés</h4>
+<div class="resume">
+<h2 align="center"><strong>N°1</strong><br />
+<a href="../../../revue/societe/2015/violences-envers-les-femmes-dans-le-monde-l-etat-de-la-situation.php"><img id="Light" class="img" src="../../../cartes/societe/femme/carte-monde-femmes-victimes-violences-physiques-en-2015_atlasocio.png" width="200" height="150" alt=""><br />
+Violences envers les femmes dans le monde&nbsp;: l’état de la situation</a></h2><br />
+<h2 align="center"><strong>N°2</strong><br />
+<a href="../../../revue/societe/2018/harcelement-scolaire-130-millions-de-victimes-a-travers-le-monde.php"><img id="Light" class="img" src="../../../cartes/societe/enfant/carte-monde-harcelement-scolaire-periode-2006-2016_atlasocio.png" width="200" height="150" alt=""><br />
+Harcèlement scolaire&nbsp;: 130 millions de victimes à travers le monde</a></h2><br />
+<h2 align="center"><strong>N°3</strong><br />
+<a href="../../../revue/demographie/2015/la-population-mondiale-devrait-atteindre-les-10-milliards-d-habitants-en-2050.php"><img id="Light" class="img" src="../../../cartes/demographie/population/carte-monde-population-en-2050-projection_atlasocio.png" width="200" height="150" alt=""><br />
+La population mondiale devrait atteindre les 10 milliards d’habitants en 2050</a></h2><br />
+<h2 align="center"><strong>N°4</strong><br />
+<a href="../../../revue/environnement/2019/couvert-forestier-mondial-de-la-deforestation-massive-aux-tentatives-de-reboisement.php"><img id="Light" class="img" src="../../../cartes/geographie/forets/carte-monde-surface-forestiere-evolution-periode-1990-2016_atlasocio.png" width="200" height="150" alt=""><br />
+Couvert forestier mondial&nbsp;: de la déforestation massive aux tentatives de reboisement</a></h2><br />
+<h2 align="center"><strong>N°5</strong><br />
+<a href="../../../revue/societe/2020/les-plus-grands-bidonvilles-du-monde-entre-solidarites-collectives-et-repressions-etatiques.php"><img id="Light" class="img" src="../../../cartes/demographie/urbanisation/carte-monde-bidonvilles-les-plus-peuples-en-2020_atlasocio.png" width="200" height="150" alt=""><br />
+Les plus grands bidonvilles du monde, entre solidarités collectives et répressions étatiques</a></h2>
+</div>
+</section>
+
+
+<section class="partie section-article">
+<!-- PUBLICITE -->
+<!-- Publicité "atlasocio-skyscraper" -->
+<p align="center"><span class="publicite">Publicité</span><br />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- atlasocio-skyscraper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6434437851824569"
+     data-ad-slot="9327310123"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</p><!-- /PUBLICITE -->
+</section>
+
+<section class="partie section-article">
+<h4>Classements les + consultés</h4>
+<div class="resume">
+<h2>01.&nbsp;<a href="../../../classements/defense/puissance-militaire/classement-etats-par-puissance-militaire-monde.php">Classement des États du monde par indice de puissance militaire</a></h2><br />
+&nbsp;<br />
+<h2>02.&nbsp;<a href="../../../classements/geographie/superficie/classement-continents-par-superficie-modele-a-six-continents-amerique-unifiee.php">Classement des continents par superficie</a></h2><br />
+&nbsp;<br />
+<h2>03.&nbsp;<a href="../../../classements/economie/developpement/classement-etats-par-indice-de-developpement-humain-monde.php">Classement des États du monde par indice de développement humain (IDH)</a></h2><br />
+&nbsp;<br />
+<h2>04.&nbsp;<a href="../../../classements/langues/locuteurs/classement-langues-par-nombre-locuteurs-total-monde.php">Classement des langues du monde par nombre total de locuteurs</a></h2><br />
+&nbsp;<br />
+<h2>05.&nbsp;<a href="../../../classements/religions/adherents/classement-religions-croyances-par-nombre-adherents-monde.php">Classement des religions / croyances par nombre d'adhérents</a></h2><br />
+</div>
+</section>
+
+<section class="partie section-article">
+<!-- PUBLICITE -->
+<!-- Publicité "atlasocio-skyscraper" -->
+<p align="center"><span class="publicite">Publicité</span><br />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- atlasocio-skyscraper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6434437851824569"
+     data-ad-slot="9327310123"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</p><!-- /PUBLICITE -->
+</section>
+
+<section class="partie section-article">
+<h4>Cartes les + consultées</h4>
+<div class="resume">
+<h2 align="center"><strong>N°1</strong><br />
+<a href="../../../cartes/recherche/selection/indice-bonheur.php"><img class="img" src="../../../cartes/societe/bonheur/carte-monde-indice-bonheur-en-2019_atlasocio.png" width="200" height="150" alt=""><br />
+Carte du monde&nbsp;: indice de bonheur</a></h2><br />
+<h2 align="center"><strong>N°2</strong><br />
+<a href="../../../cartes/recherche/selection/inegalites-revenu-coefficient-gini.php"><img class="img" src="../../../cartes/economie/inegalites/carte-monde-inegalites-de-revenu-coefficient-gini-en-2017_atlasocio.png" width="200" height="150" alt=""><br />
+Carte du monde&nbsp;: inégalités de revenu (coefficient de Gini)</a></h2><br />
+<h2 align="center"><strong>N°3</strong><br />
+<a href="../../../cartes/recherche/selection/taux-pauvrete.php"><img class="img" src="../../../cartes/economie/pauvrete/carte-monde-taux-de-pauvrete-en-2018_atlasocio.png" width="200" height="150" alt=""><br />
+Carte du monde&nbsp;: taux de pauvreté</a></h2><br />
+<h2 align="center"><strong>N°4</strong><br />
+<a href="../../../cartes/recherche/selection/indice-democratie.php"><img class="img" src="../../../cartes/politique/democratie/carte-monde-indice-democratie-en-2018_atlasocio.png" width="200" height="150" alt=""><br />
+Carte du monde&nbsp;: indice de démocratie</a></h2><br />
+<h2 align="center"><strong>N°5</strong><br />
+<a href="../../../cartes/recherche/selection/taux-homicide-volontaire.php"><img class="img" src="../../../cartes/societe/criminalite/carte-monde-taux-homicide-volontaire-en-2016_atlasocio.png" width="200" height="150" alt=""><br />
+Carte du monde&nbsp;: taux d'homicide volontaire</a></h2>
+</div>
+</section>
+
+
+</aside><!-- /ASIDE -->
+
+<!-- FOOTER -->
+<footer>
+        <ul class="footer-liens liens">
+          <li>©&nbsp;<!-- Année -->2022<!-- /Année -->&nbsp;Atlasocio.com | ISSN&nbsp;2426-072X | Tous droits réservés</li>
+		  <li>
+            <a href="../../../a-propos.php" title="À propos">À&nbsp;propos</a>
+          </li>
+		  <li>
+            <a href="../../../sources-et-definitions.php" title="Sources et définitions">Sources&nbsp;&#38;&nbsp;définitions</a>
+          </li>
+		  <li>
+            <a href="../../../contact.php" title="Contact">Contact</a>
+          </li>
+          <li>
+            <a href="../../../mentions-legales.php" title="Mentions légales">Mentions&nbsp;légales</a>
+          </li>
+		  <li><a href="../../../cgu.php" title="Conditions générales d'utilisation">CGU</a></li>
+		  <li>
+		    <a href="../../../politique-de-confidentialite.php" title="Politique de confidentialité et gestion des données personnelles">Politique&nbsp;de&nbsp;confidentialité</a>
+		  </li>
+        </ul>
+		<ul class="footer-liens liens">
+          <li>Nous&nbsp;suivre</li>
+		  <li>
+		  <a href="https://www.facebook.com/atlasocio/" target="_blank"><img id="Light" src="../../../img/facebook.png" width="13" height="13" title="Nous suivre sur Facebook" /></a>
+          </li>
+		  <li>
+		  <a href="https://twitter.com/AtlasocioCom" target="_blank"><img id="Light" src="../../../img/twitter.png" width="13" height="13" title="Nous suivre sur Twitter" /></a>
+          </li>
+		  <li>
+		  <a href="../../../rss/atlasocio-rss.xml" target="_blank"><img id="Light" src="../../../img/rss.png" width="13" height="13" title="Suivre nos publications" /></a>
+		  </li>
+        </ul><br />
+		<p class="footer-partenaires">Sources&nbsp;principales</p>
+		<p class="footer-partenaires">
+        <a href="http://www.banquemondiale.org" target="_blank"><img id="Light" src="../../../img/banque-mondiale.png" title="Banque mondiale" /></a>&nbsp;
+		<a href="http://www.oecd.org/fr" target="_blank"><img id="Light" src="../../../img/ocde.png" title="OCDE" /></a>&nbsp;
+		<a href="http://www.who.int/fr" target="_blank"><img id="Light" src="../../../img/oms.png" title="OMS" /></a>&nbsp;
+		<a href="http://www.undp.org" target="_blank"><img id="Light" src="../../../img/pnud.png" title="PNUD" /></a>&nbsp;
+		<a href="http://www.unicef.org/french" target="_blank"><img id="Light" src="../../../img/unicef.png" title="UNICEF" /></a>
+        </p>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script type="text/javascript" src="../../../js/galmod.js"></script>
+<script type="text/javascript" src="../../../js/accordion.js"></script>
+<script type="text/javascript" src="../../../js/button-toggle.js"></script>
+<script type="text/javascript" src="../../../js/dropdown.js"></script>
+<script type="text/javascript" src="../../../js/popup-text.js"></script>
+<script type="text/javascript" src="../../../js/slideshow.js"></script>
+<script type="text/javascript" src="../../../js/slideshowmodal.js"></script>
+<script type="text/javascript" src="../../../js/gototop.js"></script>
+<!-- /JAVASCRIPT --><!-- /FOOTER -->
+  
+</body></html>

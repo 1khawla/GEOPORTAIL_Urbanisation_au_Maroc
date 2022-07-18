@@ -1,0 +1,207 @@
+<html 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="default.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" type="text/css">
+    <link rel="stylesheet" href="leaflet.css" />
+    <script src="leaflet.js"></script>
+  
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+	</head>
+    <style>
+        .legend {
+                    line-height: 25px;
+                    color: #333;
+                }
+                .legend i {
+                    width: 25px;
+                    height: 25px;
+                    float: left;
+                    margin-right: 8px;
+                    opacity: 1;
+                }
+    </style>
+	
+<body>
+
+<div id="header">
+            <div>
+            <div id="title">
+                <h2>
+                Les surfaces cultivées au Maroc entre 2016 et 2019 en Mille HA
+                </h2>
+            </div>
+            <div>
+                      
+</div>
+<div id="wrapper">
+        <center><div id="mapid" style="width: 1000px; height: 550px;"></div></center>
+        <div class="leaflet-top leaflet-right"><div class="info leaflet-control">
+		<script src="region.geojson"></script>
+		<script src="SliderControl.js"></script>
+            <script>
+             var sliderControl = null;
+				var mymap = L.map('mapid').setView([30.613190, -5.980813], 4.5);
+                
+				L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(mymap);
+                function getColor(d) {
+                    return  d > 1000  ? '#0a4f0a' :
+            d > 500  ? '#10b010' :
+            d > 250  ? '#08d708' :
+            d > 50   ? '#9bfd9b' : '#feedde';
+            
+    }
+
+                function style1(feature) {
+                    return {
+                        weight: 2,
+                        opacity: 1,
+                        color: 'black',
+                        dashArray: '3',
+                        fillOpacity: 1,
+                        fillColor: getColor(feature.properties.Agri_2016)
+                    };
+                }
+				 function style2(feature) {
+                    return {
+                        weight: 2,
+                        opacity: 1,
+                        color: 'black',
+                        dashArray: '3',
+                        fillOpacity: 1,
+                        fillColor: getColor(feature.properties.Agri_2017)
+                    };
+                }
+				function style3(feature) {
+                    return {
+                        weight: 2,
+                        opacity: 1,
+                        color: 'black',
+                        dashArray: '3',
+                        fillOpacity: 1,
+                        fillColor: getColor(feature.properties.Agri_2018)
+                    };
+                }
+				
+					
+                function highlightFeature(e) {
+                    var layer = e.target;
+
+                    layer.setStyle({
+                        weight: 5,
+                        color: '#00091a',
+                        dashArray: '',
+                        fillOpacity: 0.7
+                    });                   
+                }
+
+                var geojson1;
+
+                function resetHighlight1(e) {
+                    geojson1.resetStyle(e.target);
+                    
+                }
+				var geojson2;
+
+                function resetHighlight2(e) {
+                    geojson2.resetStyle(e.target);
+                    
+                }
+				var geojson3;
+
+                function resetHighlight3(e) {
+                    geojson3.resetStyle(e.target);
+                
+				
+                }
+				
+	
+                function zoomToFeature(e) {
+                    mymap.fitBounds(e.target.getBounds());
+                }
+
+                function onEachFeature1(feature, layer) {
+                    layer.on({
+                        mouseover: highlightFeature,
+                        mouseout: resetHighlight1,
+                        click: zoomToFeature
+                    });
+                }
+				 function onEachFeature2(feature, layer) {
+                    layer.on({
+                        mouseover: highlightFeature,
+                        mouseout: resetHighlight2,
+                        click: zoomToFeature
+                    });
+                }
+				function onEachFeature3(feature, layer) {
+                    layer.on({
+                        mouseover: highlightFeature,
+                        mouseout: resetHighlight3,
+                        click: zoomToFeature
+                    });
+                }
+				
+				
+				 
+				
+				
+                geojson1 = L.geoJson(regions,{style: style1, onEachFeature: onEachFeature1, time: "2016_2017"
+                        }
+                );
+				geojson2 = L.geoJson(regions,{style: style2, onEachFeature: onEachFeature2, time: "2017_2018"
+                        }
+                );
+				geojson3 = L.geoJson(regions,{style: style3, onEachFeature: onEachFeature3, time: "2018_2019"
+                        }
+                );
+				
+						
+				
+				 layerGroup = L.layerGroup([geojson1, geojson2, geojson3]);
+				var sliderControl = L.control.sliderControl({layer:layerGroup, follow: true});
+				mymap.addControl(sliderControl);
+				sliderControl.startSlider();
+                var info = L.control(); 
+            
+
+        
+    
+				// KEY
+
+                var legend = L.control({position: 'bottomleft'});
+
+                legend.onAdd = function (mymap) {
+
+                    var div = L.DomUtil.create('div', 'info legend');
+                            grades = [0,50,250,500,1000];
+                            labels = [];
+                            
+                    // loop through our density intervals and generate a label with a colored square for each interval
+                    for (var i = 0; i < grades.length; i++) {
+            div.innerHTML +=
+            '<i style="background:' +
+            getColor(grades[i] + 1) +
+            '"></i> ' +
+            grades[i] +
+            (grades[i + 1] ? "&ndash;" + grades[i + 1] + "<br>" : " + en Mille HA");
+                }
+
+                return div;
+                }
+                legend.addTo(mymap);
+
+                 
+        
+				
+            </script>
+
+</body>
+</html>

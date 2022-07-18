@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GeoURBAIN</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <link rel="stylesheet" href="Leaflet.PolylineMeasure.css" />
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script src="Leaflet.PolylineMeasure.js"></script>
+        <script src="region2015.geojson" type="text/javascript"></script>
+        <script src="villefinal.geojson" type="text/javascript"></script>
+        <style>
+            #map {
+            width: 800px;
+            height: 500px;
+            margin: 20px auto;
+        }
+h4 {
+  
+  padding:20px 5px 5px 20px;
+  font-size: 50px;
+font-size: 2em;
+}
+            body {padding: 0; margin: 0;}
+            html, body, 
+        </style>
+    </head>
+
+    <body>  
+        
+           <h4>Carte des villes marocaines avec l'outil de mesure de distance</h4>
+
+        <div id="map"></div>
+        <script>
+
+            var options = {
+            center: [28.6,-4.3],          
+            zoom: 5
+        }
+
+        // create a Leaflet map in our division container with id of 'map'
+        var map = L.map('map', options);
+
+        // Leaflet providers base map URL
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+var regionGeoJs=L.geoJson(region_2015, {
+  style :{
+    weight: 1,
+    opacity: 1,
+    color: '#dd1c77',
+    fillOpacity: 0.1
+  }
+}).addTo(map);
+
+
+
+
+            L.control.scale ({maxWidth:240, metric:true, imperial:false, position: 'bottomleft'}).addTo (map);
+            let polylineMeasure = L.control.polylineMeasure ({position:'topleft', unit:'kilometres', showBearings:true, clearMeasurementsOnStop: false, showClearControl: true, showUnitControl: true})
+            polylineMeasure.addTo (map);
+
+
+
+            // Some constant polyline coords:
+            const line1coords = [
+                { lat: 22.156883186860703, lng: -158.95019531250003 },
+                { lat: 22.01436065310322, lng: -157.33520507812503 },
+                { lat: 21.391704731036587, lng: -156.17065429687503 },
+                { lat: 20.64306554672647, lng: -155.56640625000003 },
+                { lat: 19.342244996771804, lng: -155.33569335937503 }
+            ];
+            const line2coords = [
+                { lat: 19.880391767822505, lng: -159.67529296875003 },
+                { lat: 17.90556881196468, lng: -156.39038085937503 }
+            ];
+
+            polylineMeasure.seed([line1coords, line2coords])
+
+            
+var regionCentroProd=L.geoJson(ville, {
+  pointToLayer: function (feature, latlng) {
+    return L.circleMarker(latlng,{
+      radius : 2,
+      color : '#756bb1',
+      fillOpacity: 0.5,
+  fillColor: '#41AE76'
+     });
+ },
+ onEachFeature: function (feature, layer) {
+                var popup =
+                    '<p><b>' + layer.feature.properties.NOM + '</b></p>' +
+                     ' </p>'  
+                    
+
+                layer.on('mouseover', function () {
+                    layer.bindPopup(popup).openPopup();
+                    layer.setStyle({
+                        fillColor: 'yellow',
+                        fillOpacity: 1
+                    });
+                });
+
+                layer.on('mouseout', function () {
+                    layer.setStyle({
+                        fillColor: '#005824',
+                        fillOpacity: 0.3
+                    });
+                    layer.bindPopup(popup).closePopup();
+                })
+
+            }
+ //
+}).addTo(map);
+
+
+
+
+
+        </script>
+        <!-- Scripts -->
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="./data/regions.js"></script>
+<script src='https://unpkg.com/simple-statistics@7.7.2/dist/simple-statistics.min.js' crossorigin="anonymous"></script>
+<script src="./assets/js/simple_statistics.js"></script>
+    </body>
+</html>

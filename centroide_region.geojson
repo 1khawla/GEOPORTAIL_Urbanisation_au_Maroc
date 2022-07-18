@@ -1,0 +1,19 @@
+var pop_urbaine={
+"type": "FeatureCollection",
+"name": "final",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "OBJECTID": 9, "Région": "Guelmim-Oued Noun", "CODE_REGIO": "10.", "pop_u_2014": 280094.0, "pop_u_2018": 298019.0, "pop_u_2019": 302715.0 }, "geometry": { "type": "Point", "coordinates": [ -9.926686105049928, 28.311815461173737 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 6, "Région": "Marrakech-Safi", "CODE_REGIO": "07.", "pop_u_2014": 1983016.0, "pop_u_2018": 2047620.0, "pop_u_2019": 2076058.0 }, "geometry": { "type": "Point", "coordinates": [ -8.457982637156469, 31.705347787201386 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 14, "Région": "Grand Casa-Settat", "CODE_REGIO": "06.", "pop_u_2014": 5050749.0, "pop_u_2018": 5452465.0, "pop_u_2019": 5559347.0 }, "geometry": { "type": "Point", "coordinates": [ -7.778994423749594, 33.006995859515285 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 4, "Région": "Rabat-Salé-Kénitra", "CODE_REGIO": "04.", "pop_u_2014": 3198712.0, "pop_u_2018": 3405881.0, "pop_u_2019": 3460177.0 }, "geometry": { "type": "Point", "coordinates": [ -6.204578305502531, 34.068621959246812 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 5, "Région": "Béni Mellal-Khénifra", "CODE_REGIO": "05.", "pop_u_2014": 1238739.0, "pop_u_2018": 1313421.0, "pop_u_2019": 1332893.0 }, "geometry": { "type": "Point", "coordinates": [ -6.304632945038255, 32.465787197055214 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 8, "Région": "Souss-Massa", "CODE_REGIO": "09.", "pop_u_2014": 1505896.0, "pop_u_2018": 1683198.0, "pop_u_2019": 1731805.0 }, "geometry": { "type": "Point", "coordinates": [ -8.344182782810167, 29.925411121220957 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 7, "Région": "Drâa-Tafilalet", "CODE_REGIO": "08.", "pop_u_2014": 560738.0, "pop_u_2018": 595349.0, "pop_u_2019": 604390.0 }, "geometry": { "type": "Point", "coordinates": [ -5.360774240121666, 31.198813029537298 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 1, "Région": "Tanger-Tétouan-Al Hoceima", "CODE_REGIO": "01.", "pop_u_2014": 2131725.0, "pop_u_2018": 2287315.0, "pop_u_2019": 2328455.0 }, "geometry": { "type": "Point", "coordinates": [ -5.1759029121216, 35.151041058742834 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 10, "Région": "Laayoun-Sakia El Hamra", "CODE_REGIO": "11.", "pop_u_2014": 343362.0, "pop_u_2018": 368960.0, "pop_u_2019": 375738.0 }, "geometry": { "type": "Point", "coordinates": [ -12.020482051379075, 26.330669461621824 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 11, "Région": "Eddakhla-Oued Eddahab", "CODE_REGIO": "12.", "pop_u_2014": 106277.0, "pop_u_2018": 129375.0, "pop_u_2019": 136111.0 }, "geometry": { "type": "Point", "coordinates": [ -14.454384496559905, 22.898797932760328 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 2, "Région": "Oriental", "CODE_REGIO": "02.", "pop_u_2014": 1513911.0, "pop_u_2018": 1663784.0, "pop_u_2019": 1704317.0 }, "geometry": { "type": "Point", "coordinates": [ -2.658765674600691, 33.51968383741044 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 3, "Région": "Fes-Meknès", "CODE_REGIO": "03.", "pop_u_2014": 2564220.0, "pop_u_2018": 2722714.0, "pop_u_2019": 2764109.0 }, "geometry": { "type": "Point", "coordinates": [ -4.489129469599901, 33.751197317462179 ] } }
+]
+}
